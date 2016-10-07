@@ -2,8 +2,9 @@
 ^.git$
 ^.project$
 ^.settings$
-^r_package_template.Rproj$
 ^README.md$
 ^src/*.o$
 ^src/*.so$
 ^src/*.dll$
+^.*\.Rproj$
+^\.Rproj\.user$

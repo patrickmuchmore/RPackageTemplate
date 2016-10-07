@@ -1,4 +1,4 @@
-Package: r.package.template
+Package: rpackagetemplate
 Type: Package
 Title: A template for Rcpp(Armadillo) packages
 Version: 0.1

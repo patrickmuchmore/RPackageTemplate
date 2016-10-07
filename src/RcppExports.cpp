@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // rcpparma_hello_world
 arma::mat rcpparma_hello_world();
-RcppExport SEXP r.package.template_rcpparma_hello_world() {
+RcppExport SEXP rpackagetemplate_rcpparma_hello_world() {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -18,7 +18,7 @@ END_RCPP
 }
 // rcpparma_outerproduct
 arma::mat rcpparma_outerproduct(const arma::colvec& x);
-RcppExport SEXP r.package.template_rcpparma_outerproduct(SEXP xSEXP) {
+RcppExport SEXP rpackagetemplate_rcpparma_outerproduct(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -29,7 +29,7 @@ END_RCPP
 }
 // rcpparma_innerproduct
 double rcpparma_innerproduct(const arma::colvec& x);
-RcppExport SEXP r.package.template_rcpparma_innerproduct(SEXP xSEXP) {
+RcppExport SEXP rpackagetemplate_rcpparma_innerproduct(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -40,7 +40,7 @@ END_RCPP
 }
 // rcpparma_bothproducts
 Rcpp::List rcpparma_bothproducts(const arma::colvec& x);
-RcppExport SEXP r.package.template_rcpparma_bothproducts(SEXP xSEXP) {
+RcppExport SEXP rpackagetemplate_rcpparma_bothproducts(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;

@@ -4,7 +4,7 @@ This repository contains an R package template supporting the use of the Rcpp an
 
 ## RStudio, Git, and SSH Keys
 
-The R package source code is stored in a git repository, which is accessible using the ssh (__s__ecure __sh__ell) protocol. Connecting to a remote git repository requires a git client to be installed on your system. To establish if RStudio has recognized your git installation, click on the `Tools` menu and select `Global Options...` (this dialog may load slowly the first time it is opened), then click on `Git/SVN` in the left panel.
+The R package source code is stored in a git repository, which is accessible using the ssh (__s__ecure __sh__ell) protocol. Connecting to a remote git repository requires a git client to be installed on your system. To establish if RStudio has recognized your git installation, click on the `Tools` menu and select `Global Options...` (this dialog may load slowly the first time it is opened), then click on `Git/SVN` in the left panel. Also make sure the checkbox `Enable version control interface for RStudio projects` has been selected.
 
 ![RStudio global options](./readme/SSHKey.png)
 

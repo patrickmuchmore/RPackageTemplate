@@ -9,3 +9,4 @@ Description: A project that serves as a template for future packages. Support fo
 License: GPL-3
 Imports: Rcpp (>= 0.12.6)
 LinkingTo: Rcpp, RcppArmadillo
+Suggests: testthat

@@ -32,3 +32,7 @@ To register your public key, login into bitbucket and click on your avatar, whic
 Next, click on `Add key`, and paste the public key from before into the text box. It is recommended to label your SSH keys, particularly when using more than one. Press the `Add key` button when finished.
 
 ![Bitbucket add key](./readme/BitbucketAddKey.png)
+
+## Cloning the project repository into RStudio
+
+With RStudio configured for git, and your ssh key registered with the git host, you're ready to clone the package template repository. From the `File` menu select `New Project...`, then click on `Version Control` followed by `Git`. Enter `git@bitbucket.org:biostatpo1/rpackagetemplate.git` for the `Repository URL`. To change the target local directory for the cloned repository, set `Create project as subdirectory of:` to the desired file system path. Do not change the default `Project directory name:`. If `Open in new session` is checked, RStudio will automatically switch to the new project after completing the download. After setting the appropriate option values, click `Create Project` to clone the repository using git.

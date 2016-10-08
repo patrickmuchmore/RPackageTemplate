@@ -15,9 +15,9 @@ Once RStudio has recognized your git installation, check to see if it has found 
 1. If a key has not been found, make one by selecting `Create RSA Key...`. Using a passphrase is more secure, albeit less convenient.  
 ![Create RSA Key](./readme/CreateRSAKey.png)
 
-- If a key has been found and it is the one you want to use, nothing needs to be done.
+2. If a key has been found and it is the one you want to use, nothing needs to be done.
     
-- If a key has been found and it is not the one you want to use, complain to RStudio, because as far as I can tell it cannot be changed by the user. In Linux a workaround is to set the environment variable `GIT_SSH_COMMAND='ssh -i /path/to/alternate/key/id_rsa'` before running RStudio, overriding the default key selection.
+3. If a key has been found and it is not the one you want to use, complain to RStudio, because as far as I can tell it cannot be changed by the user. In Linux a workaround is to set the environment variable `GIT_SSH_COMMAND='ssh -i /path/to/alternate/key/id_rsa'` before running RStudio, overriding the default key selection.
 
 The RSA public key will be used to identify and authenticate you when connecting to the git host via ssh. In cases 1 and 2 above, you can access this file by clicking `View public key`. This key must be registered with the git host, so you may want to copy and paste it into a temporary text file.
 

@@ -10,7 +10,8 @@ Connecting to a remote git repository requires a git client to be installed. To
 establish if RStudio has recognized your git installation select the choice
 `Global Options...` from the `Tools` menu, then click on `Git/SVN` in the left
 panel.
-![Global Options](help/images/SSHKey.png)
+
+<img style="display: block; width: 350px%" src="help/images/SSHKey.png" />
  
 If your Git executable is shown as `(Not Found)` you probably need to install a
 git client; for instructions click

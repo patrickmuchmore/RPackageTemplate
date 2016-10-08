@@ -3,6 +3,7 @@
 ^.project$
 ^.settings$
 ^README.md$
+^readme$
 ^src/*.o$
 ^src/*.so$
 ^src/*.dll$

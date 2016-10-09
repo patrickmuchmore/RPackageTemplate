@@ -32,7 +32,7 @@ In case 3 above, it is assumed that anyone using something other than the defaul
 
 ### Registering your SSH public key with bitbucket
 
-To register your public key, login into bitbucket and click on your avatar, which is located in the top right corner and defaults to the image ![Avatar](./readme/BitbucketAvatar.png). From there, select __Bitbucket settings__, and then click on __SSH Keys__ in the left panel.
+To register your public key, log in to bitbucket and click on your avatar, which is located in the top right corner and defaults to the image ![Avatar](./readme/BitbucketAvatar.png). From there, select __Bitbucket settings__, and then click on __SSH Keys__ in the left panel.
 
 Next, click on __Add key__, and paste the public key from before into the text box. It is recommended to label your SSH keys, particularly when using more than one. Press the __Add key__ button when finished.
 
@@ -64,5 +64,3 @@ Assuming the package has been built successfully, it is automatically (re)loaded
     [1,]    7    0    0
     [2,]    0    7    0
     [3,]    0    0    7
-
-

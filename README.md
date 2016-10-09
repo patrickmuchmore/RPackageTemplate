@@ -44,7 +44,7 @@ With RStudio configured for Git, and your SSH key registered with the Git host, 
 
 ![Cloning a repository with Git and RStudio](./readme/CloneGitRepo.png)
 
-The field __Create project as subdirectory of__ indicates where the *rpackagetemplate* directory will be created. To specify an alternate location, click __Browse__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git.
+The field __Create project as subdirectory of__ indicates where the *rpackagetemplate* directory will be created. To specify an alternate location, click __Browse...__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git.
 
 ### Building and running the package template project with RStudio
 

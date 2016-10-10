@@ -30,9 +30,9 @@ The RSA public key will be used to identify and authenticate you when connecting
 
 In case 3 above, it is assumed that anyone using something other than the default knows how to find the appropriate public key.
 
-### Registering your SSH public key with bitbucket
+### Registering your SSH public key with Bitbucket
 
-To register your public key, log in to bitbucket and click on your avatar, which is located in the top right corner and defaults to the image ![Avatar](./readme/BitbucketAvatar.png). From there, select __Bitbucket settings__, and then click on __SSH Keys__ in the left panel.
+To register your public key, log in to Bitbucket and click on your avatar, which is located in the top right corner and defaults to the image ![Avatar](./readme/BitbucketAvatar.png). From there, select __Bitbucket settings__, and then click on __SSH Keys__ in the left panel.
 
 Next, click on __Add key__, and paste the public key from before into the text box. It is recommended to label your SSH keys, particularly when using more than one. Press the __Add key__ button when finished.
 

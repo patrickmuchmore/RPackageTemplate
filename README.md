@@ -3,7 +3,7 @@
 This repository contains an R package template supporting the use of the Rcpp and/or RcppArmadillo packages. The package template has been configured as an RStudio project, and the following instructions assume you have [RStudio](https://www.rstudio.com/) installed. To make full use of RStudio, the [devtools](https://cran.r-project.org/web/packages/devtools/index.html) R package should also be installed. The package template includes both `R` and `C++` code, so a [suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++` compiler must be available to build the package from source.
 
 1. [Configuring RStudio for Git via SSH](#configuring-rstudio-for-git-via-ssh)
-2. [Registering your SSH public key with bitbucket](#registering-your-ssh-public-key-with-bitbucket)
+2. [Registering your SSH public key with Bitbucket](#registering-your-ssh-public-key-with-bitbucket)
 3. [Cloning the project repository with RStudio](#cloning-the-project-repository-with-rstudio)
 4. [Building and running the package template project with RStudio](#building-and-running-the-package-template-project-with-rstudio)
 

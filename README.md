@@ -20,7 +20,7 @@ Once RStudio has recognized your Git installation, check to see if it has found 
 1. If the __SSH RSA Key__ is __(None)__, make one by clicking the __Create RSA Key...__ button. Using a passphrase is more secure, albeit less convenient.  
 ![Create RSA Key](./readme/CreateRSAKey.png)
 
-2. If the __SSH RSA Key__ is the one you want to use, nothing needs to be done. (It is probably safe to use any key it finds, but as always caveat emptor). 
+2. If the __SSH RSA Key__ is the one you want to use, nothing needs to be done.
     
 3. If the __SSH RSA Key__ is not the one you want to use, complain to RStudio, because as far as I can tell it cannot be changed by the user. In Linux a workaround is to set the environment variable `GIT_SSH_COMMAND='ssh -i /path/to/alternate/key/id_rsa'` before running RStudio, overriding the default key selection.
 

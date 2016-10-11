@@ -3,7 +3,7 @@
 This repository contains an R package template supporting the use of the Rcpp and/or RcppArmadillo packages. The package template has been configured as an RStudio project, and the following instructions assume you have [RStudio](https://www.rstudio.com/) installed. To make full use of RStudio, the [devtools](https://cran.r-project.org/web/packages/devtools/index.html) R package should also be installed. The package template includes both `R` and `C++` code, so a [suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++` compiler must be available to build the package from source.
 
 1. [Configuring RStudio for Git via SSH](#configuring-rstudio-for-git-via-ssh)
-2. [Registering your SSH public key with Bitbucket](#registering-your-ssh-public-key-with-bitbucket)
+2. [Registering your SSH public key with GitHub](#registering-your-ssh-public-key-with-github)
 3. [Cloning the project repository with RStudio](#cloning-the-project-repository-with-rstudio)
 4. [Building and running the package template project with RStudio](#building-and-running-the-package-template-project-with-rstudio)
 
@@ -30,21 +30,25 @@ The RSA public key will be used to identify and authenticate you when connecting
 
 In case 3 above, it is assumed that anyone using something other than the default knows how to find the appropriate public key.
 
-### Registering your SSH public key with Bitbucket
+### Registering your SSH public key with GitHub
 
-To register your public key, log in to Bitbucket and click on your avatar, which is located in the top right corner and defaults to the image ![Avatar](./readme/BitbucketAvatar.png). From there, select __Bitbucket settings__, and then click on __SSH Keys__ in the left panel.
+To register your public key, log in to GitHub and click on your avatar, which is located in the top right of the page and defaults to the image ![Avatar](./readme/GitHubAvatar.png). From there, select __Settings__, and then click on __SSH and GPG keys__ in the left panel.
 
-Next, click on __Add key__, and paste the public key from before into the text box. It is recommended to label your SSH keys, particularly when using more than one. Press the __Add key__ button when finished.
+Next, click on __New SSH key__, and paste the public key from before into the text box. A title is optional but recommended, particularly with multiple keys. Press the __Add SSH key__ button when finished.
 
-![Bitbucket add key](./readme/BitbucketAddKey.png)
+![GitHub add key](./readme/GitHubAddKey.png)
 
 ### Cloning the project repository with RStudio
 
-With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@bitbucket.org:biostatpo1/RPackageTemplate.git* for the __Repository URL__, and leave the __Project directory name__ empty. When the repository is cloned, a new directory named *RPackageTemplate* will be created. 
+With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@github.com:patrickmuchmore/RPackageTemplate.git* for the __Repository URL__, and leave the __Project directory name__ at its default value. When the repository is cloned, a new directory named *RPackageTemplate* will be created. 
 
 ![Cloning a repository with Git and RStudio](./readme/CloneGitRepo.png)
 
-The field __Create project as subdirectory of__ indicates where the *RPackageTemplate* directory will be created. To specify an alternate location, click __Browse...__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git.
+The field __Create project as subdirectory of__ indicates where the *RPackageTemplate* directory will be created. To specify an alternate location, click __Browse...__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git. 
+
+The first time you connect to a remote host (such as github.com), you may receive an SSH security message asking you to confirm before continuing. You must type __yes__ to continue, simply hitting __OK__ will terminate the connection.
+
+![SSH Host Auth](./readme/HostAuth.png)
 
 ### Building and running the package template project with RStudio
 

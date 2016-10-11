@@ -40,7 +40,7 @@ Next, click on __New SSH key__, and paste the public key from before into the te
 
 ### Cloning the project repository with RStudio
 
-With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@github.com:patrickmuchmore/RPackageTemplate.git* for the __Repository URL__, and leave the __Project directory name__ at its default value. When the repository is cloned, a new directory named *RPackageTemplate* will be created. 
+With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@github&#46;com:patrickmuchmore/RPackageTemplate.git* for the __Repository URL__, and leave the __Project directory name__ at its default value. When the repository is cloned, a new directory named *RPackageTemplate* will be created. 
 
 ![Cloning a repository with Git and RStudio](./readme/CloneGitRepo.png)
 

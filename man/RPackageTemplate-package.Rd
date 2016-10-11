@@ -1,24 +1,24 @@
-\name{rpackagetemplate-package}
-\alias{rpackagetemplate-package}
-\alias{rpackagetemplate}
+\name{RPackageTemplate-package}
+\alias{RPackageTemplate-package}
+\alias{RPackageTemplate}
 \docType{package}
 \title{
-\packageTitle{rpackagetemplate}
+\packageTitle{RPackageTemplate}
 }
 \description{
-\packageDescription{rpackagetemplate}
+\packageDescription{RPackageTemplate}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{rpackagetemplate}
-\packageIndices{rpackagetemplate}
+\packageDESCRIPTION{RPackageTemplate}
+\packageIndices{RPackageTemplate}
 
 }
 
 \author{
-\packageAuthor{rpackagetemplate}
-Maintainer: \packageMaintainer{rpackagetemplate}
+\packageAuthor{RPackageTemplate}
+Maintainer: \packageMaintainer{RPackageTemplate}
 }
 
 %\references{

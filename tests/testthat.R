@@ -1,4 +1,4 @@
 library(testthat)
-library(rpackagetemplate)
+library(RPackageTemplate)
 
-test_check("rpackagetemplate")
+test_check("RPackageTemplate")

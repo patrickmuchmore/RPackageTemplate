@@ -2,18 +2,18 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 rcpparma_hello_world <- function() {
-    .Call('rpackagetemplate_rcpparma_hello_world', PACKAGE = 'rpackagetemplate')
+    .Call('RPackageTemplate_rcpparma_hello_world', PACKAGE = 'RPackageTemplate')
 }
 
 rcpparma_outerproduct <- function(x) {
-    .Call('rpackagetemplate_rcpparma_outerproduct', PACKAGE = 'rpackagetemplate', x)
+    .Call('RPackageTemplate_rcpparma_outerproduct', PACKAGE = 'RPackageTemplate', x)
 }
 
 rcpparma_innerproduct <- function(x) {
-    .Call('rpackagetemplate_rcpparma_innerproduct', PACKAGE = 'rpackagetemplate', x)
+    .Call('RPackageTemplate_rcpparma_innerproduct', PACKAGE = 'RPackageTemplate', x)
 }
 
 rcpparma_bothproducts <- function(x) {
-    .Call('rpackagetemplate_rcpparma_bothproducts', PACKAGE = 'rpackagetemplate', x)
+    .Call('RPackageTemplate_rcpparma_bothproducts', PACKAGE = 'RPackageTemplate', x)
 }
 

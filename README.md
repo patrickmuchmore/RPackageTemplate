@@ -40,24 +40,24 @@ Next, click on __Add key__, and paste the public key from before into the text b
 
 ### Cloning the project repository with RStudio
 
-With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@bitbucket.org:biostatpo1/rpackagetemplate.git* for the __Repository URL__, and leave the __Project directory name__ empty. When the repository is cloned, a new directory named *rpackagetemplate* will be created. 
+With RStudio configured for Git, and your SSH key registered with the Git host, you are ready to clone the package template project repository. From the __File__ menu select __New Project...__, then click on __Version Control__ followed by __Git__. Enter *git@bitbucket.org:biostatpo1/RPackageTemplate.git* for the __Repository URL__, and leave the __Project directory name__ empty. When the repository is cloned, a new directory named *RPackageTemplate* will be created. 
 
 ![Cloning a repository with Git and RStudio](./readme/CloneGitRepo.png)
 
-The field __Create project as subdirectory of__ indicates where the *rpackagetemplate* directory will be created. To specify an alternate location, click __Browse...__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git.
+The field __Create project as subdirectory of__ indicates where the *RPackageTemplate* directory will be created. To specify an alternate location, click __Browse...__ and navigate to the desired file system path. If __Open in new session__ is checked, once the clone operation is complete RStudio will automatically open the project. After setting the appropriate option values, click the __Create Project__ button to clone the repository using Git.
 
 ### Building and running the package template project with RStudio
 
-To build and run the project, it must be open in RStudio (this should already be the case if __Open in new session__ was selected). If the project is not open, click on __File__ and select __Open Project...__, then navigate to the newly created *rpackagetemplate* folder and open the *rpackagetemplate.Rproj* file (the *.Rproj* extension denotes a configuration file for an RStudio project). When the project is open, one of the panes in the RStudio window should have a series of tabs including __Environemnt__, __History__, __Build__, and __Git__ (the RStudio interface can be customized by selecting __Pane Layout__ from the left panel of the __Global Options__ dialog). Click on the tab labeled __Build__.
+To build and run the project, it must be open in RStudio (this should already be the case if __Open in new session__ was selected). If the project is not open, click on __File__ and select __Open Project...__, then navigate to the newly created *RPackageTemplate* folder and open the *RPackageTemplate.Rproj* file (the *.Rproj* extension denotes a configuration file for an RStudio project). When the project is open, one of the panes in the RStudio window should have a series of tabs including __Environemnt__, __History__, __Build__, and __Git__ (the RStudio interface can be customized by selecting __Pane Layout__ from the left panel of the __Global Options__ dialog). Click on the tab labeled __Build__.
 
 ![Cloning a repository with Git and RStudio](./readme/BuildTab.png)
 
 Clicking the __Build & Reload__ button causes R to compile and load the contents of the project directory. Because the project contains `C++` code, you should see some lines of compiler output. The package is then installed, and as with any R package, if this completes successfully the last few lines of output will look like:
 
     ** testing if installed package can be loaded
-    * DONE (rpackagetemplate)
+    * DONE (RPackageTemplate)
 
-Assuming the package has been built successfully, it is automatically (re)loaded by calling `library(rpackagetemplate)`. To verify the package installation, you can run the included "hello world" function `rcpparma_hello_world`, which should return a 3x3 matrix that has seven on the diagonal and zero elsewhere.
+Assuming the package has been built successfully, it is automatically (re)loaded by calling `library(RPackageTemplate)`. To verify the package installation, you can run the included "hello world" function `rcpparma_hello_world`, which should return a 3x3 matrix that has seven on the diagonal and zero elsewhere.
 
     >rcpparma_hello_world()
          [,1] [,2] [,3]

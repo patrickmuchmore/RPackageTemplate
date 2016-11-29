@@ -1,6 +1,6 @@
 # Prerequisites
 
-This repository contains an R package template supporting the use of the
+This repository contains an R package template supporting use of the
 `Rcpp` and `RcppArmadillo` packages. To build the package using the commands
 below requires the `devtools` and `roxygen2` packages as well. To find
 out if any of these packages are missing from your R installation run:

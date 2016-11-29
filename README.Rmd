@@ -3,14 +3,14 @@
 This repository contains an R package template supporting the use of the
 `Rcpp` and `RcppArmadillo` packages. To build the package using the commands
 below requires the `devtools` and `roxygen2` packages as well. To find
-out if any of these packages are missing from your R installation run
+out if any of these packages are missing from your R installation run:
 
 ```{r eval=FALSE}
 requiredPackages = c("Rcpp", "RcppArmadillo", "devtools", "roxygen2")
 missingPackages = setdiff(requiredPackages, rownames(installed.packages()))
 ```
 
-and to install any missing packages run 
+To install any missing packages run:
 
 ```{r eval=FALSE}
 if(length(missingPackages)>0) install.packages(missingPackages)
@@ -19,10 +19,17 @@ if(length(missingPackages)>0) install.packages(missingPackages)
  The package template includes both `R` and
 `C++` code, so a
 [suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++`
-compiler must be available to build the package from source.
+compiler must be available to build the package from source. Windows users can
+try the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) software 
+collection, while Mac users should install 
+[xcode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12). Details 
+regarding how to install and configure these tools can be found on
+the RStudio website under [Package Development Prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites).
 
+With the compiler and prerequisite packages installed, the package
+template can be prepared, built, and installed by running various R commands.
 
-### Building and checking the package from within R
+### Preparing the package from within R
 ```{r eval=FALSE}
 Rcpp::compileAttributes()
 roxygen2::roxygenize()
@@ -31,17 +38,20 @@ roxygen2::roxygenize()
 
 ### Checking and building and the package from within R
 ```{r eval=FALSE}
-devtools::check(check_dir="build")
+buildDir = "build"
+if(!dir.exists(buildDir)) dir.create(buildDir)
+devtools::check(check_dir=buildDir)
 # devtools::test() tests are run during check, and can also be run separately.
-devtools::build(path="build")
+devtools::build(path=buildDir)
 ```
 
-### Installing, running, and uninstalling the package from within R
+### Installing and running the package from within R
 ```{r eval=FALE}
 devtools::install(upgrade_dependencies=FALSE)
 RPackageTemplate::r_hello_world()
-devtools::uninstall()
 ```
 
 ### Uninstalling the package from within R
 ```{r eval=FALSE}
+devtools::uninstall()
+```

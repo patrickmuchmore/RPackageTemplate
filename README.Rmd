@@ -46,7 +46,7 @@ devtools::build(path=buildDir)
 ```
 
 ### Installing and running the package from within R
-```{r eval=FALE}
+```{r eval=FALSE}
 devtools::install(upgrade_dependencies=FALSE)
 RPackageTemplate::r_hello_world()
 ```

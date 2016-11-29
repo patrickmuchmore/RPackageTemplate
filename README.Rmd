@@ -1,4 +1,4 @@
-## Prerequisites ##
+# Prerequisites
 
 This repository contains an R package template supporting the use of the
 `Rcpp` and `RcppArmadillo` packages. To build the package using the commands

@@ -1,21 +1,17 @@
-## Getting started
-To work with R Markdown, if necessary:
+# README #
 
-* Install [R](http://www.r-project.org/)
-* Install the lastest version of [RStudio](http://rstudio.org/download/) (at
-  time of posting, this is 0.96)
-* Install the latest version of the `knitr` package: `install.packages("knitr")`
+This repository contains an R package template supporting the use of the Rcpp
+and/or RcppArmadillo packages. The package template has been configured as an
+RStudio project, and the following instructions assume you have
+[RStudio](https://www.rstudio.com/) installed. To make full use of RStudio, the
+[devtools](https://cran.r-project.org/web/packages/devtools/index.html) R
+package should also be installed. The package template includes both `R` and
+`C++` code, so a
+[suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++`
+compiler must be available to build the package from source.
 
-To run the basic working example that produced this blog post:
 
-* Open R Studio, and go to File - New - R Markdown
-* If necessary install `ggplot2` and `lattice` packages:
-  `install.packages("ggplot2"); install.packages("lattice") `
-* Paste in the contents of this gist (which contains the R Markdown file used to
-  produce this post) and save the file with an `.rmd` extension
-* Click Knit HTML
-
-## Prepare for analyses
+## Building the package from within R
 ```{r eval=FALSE}
 Rcpp::compileAttributes()
 roxygen2::roxygenize()

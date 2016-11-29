@@ -13,6 +13,8 @@
 
 //' A "hello world" function using the Armadillo library.
 //'
+//' @title
+//' A "hello world" function.
 //' @return
 //' A 3x3 matrix with 7 on the diagonal and zero elsewhere.
 //' @export
@@ -26,6 +28,8 @@ arma::mat rcpparma_hello_world() {
 
 //' Calculates the inner product of a vector using the Armadillo library.
 //'
+//' @title
+//' Calculates the inner product.
 //' @param x
 //' A numeric vector of length \code{n}.
 //' @return
@@ -39,6 +43,8 @@ double rcpparma_innerproduct(const arma::colvec & x) {
 
 //' Calculates the outer product of a vector using the Armadillo library.
 //'
+//' @title
+//' Calculates the outer product.
 //' @param x
 //' A numeric vector x of length \eqn{n}.
 //' @return
@@ -52,6 +58,8 @@ arma::mat rcpparma_outerproduct(const arma::colvec & x) {
 
 //' Calls both the inner and outer product functions, returning a list.
 //'
+//' @title
+//' Calculates both products.
 //' @param x
 //' A numeric vector of length \eqn{n}.
 //' @return

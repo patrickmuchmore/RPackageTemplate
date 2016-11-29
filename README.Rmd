@@ -1,31 +1,47 @@
-# README #
+## Prerequisites ##
 
-This repository contains an R package template supporting the use of the Rcpp
-and/or RcppArmadillo packages. The package template has been configured as an
-RStudio project, and the following instructions assume you have
-[RStudio](https://www.rstudio.com/) installed. To make full use of RStudio, the
-[devtools](https://cran.r-project.org/web/packages/devtools/index.html) R
-package should also be installed. The package template includes both `R` and
+This repository contains an R package template supporting the use of the
+`Rcpp` and `RcppArmadillo` packages. To build the package using the commands
+below requires the `devtools` and `roxygen2` packages as well. To find
+out if any of these packages are missing from your R installation run
+
+```{r eval=FALSE}
+requiredPackages = c("Rcpp", "RcppArmadillo", "devtools", "roxygen2")
+missingPackages = setdiff(requiredPackages, rownames(installed.packages()))
+```
+
+and to install any missing packages run 
+
+```{r eval=FALSE}
+if(length(missingPackages)>0) install.packages(missingPackages)
+```
+
+ The package template includes both `R` and
 `C++` code, so a
 [suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++`
 compiler must be available to build the package from source.
 
 
-## Building the package from within R
+### Building and checking the package from within R
 ```{r eval=FALSE}
 Rcpp::compileAttributes()
 roxygen2::roxygenize()
-#devtools::document()
-
-#devtools::test()
-#devtools::build(path="build")
-#devtools::check(check_dir="build")
-
-# Optionally set an alternate path for library installation.
-# libInstallPath = .libPaths()[2]
-libInstallPath = ifelse(exists("libInstallPath"), libInstallPath, .libPaths()[1])
-
-withr::with_libpaths(new=libInstallPath, devtools::install(upgrade_dependencies=FALSE))
-
-withr::with_libpaths(new=libInstallPath, devtools::uninstall())
+# devtools::document() a slower, but more thorough, way to create documentation.
 ```
+
+### Checking and building and the package from within R
+```{r eval=FALSE}
+devtools::check(check_dir="build")
+# devtools::test() tests are run during check, and can also be run separately.
+devtools::build(path="build")
+```
+
+### Installing, running, and uninstalling the package from within R
+```{r eval=FALE}
+devtools::install(upgrade_dependencies=FALSE)
+RPackageTemplate::r_hello_world()
+devtools::uninstall()
+```
+
+### Uninstalling the package from within R
+```{r eval=FALSE}

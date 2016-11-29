@@ -5,8 +5,12 @@ Version: 0.1
 Date: 2016-10-7
 Author: Patrick Muchmore
 Maintainer: Patrick Muchmore <this@reduces.spam>
-Description: A project that serves as a template for future packages. Support for both Rcpp and RcppArmadillo is included by default.
+Description: A project that serves as a template for future packages. Support
+    for both Rcpp and RcppArmadillo is included by default.
 License: GPL-3
-Imports: Rcpp (>= 0.12.6)
+Imports:
+    Rcpp (>= 0.12.6)
 LinkingTo: Rcpp, RcppArmadillo
-Suggests: testthat
+Suggests:
+    testthat
+RoxygenNote: 5.0.1

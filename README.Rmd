@@ -1,0 +1,35 @@
+## Getting started
+To work with R Markdown, if necessary:
+
+* Install [R](http://www.r-project.org/)
+* Install the lastest version of [RStudio](http://rstudio.org/download/) (at
+  time of posting, this is 0.96)
+* Install the latest version of the `knitr` package: `install.packages("knitr")`
+
+To run the basic working example that produced this blog post:
+
+* Open R Studio, and go to File - New - R Markdown
+* If necessary install `ggplot2` and `lattice` packages:
+  `install.packages("ggplot2"); install.packages("lattice") `
+* Paste in the contents of this gist (which contains the R Markdown file used to
+  produce this post) and save the file with an `.rmd` extension
+* Click Knit HTML
+
+## Prepare for analyses
+```{r eval=FALSE}
+Rcpp::compileAttributes()
+roxygen2::roxygenize()
+#devtools::document()
+
+#devtools::test()
+#devtools::build(path="build")
+#devtools::check(check_dir="build")
+
+# Optionally set an alternate path for library installation.
+# libInstallPath = .libPaths()[2]
+libInstallPath = ifelse(exists("libInstallPath"), libInstallPath, .libPaths()[1])
+
+withr::with_libpaths(new=libInstallPath, devtools::install(upgrade_dependencies=FALSE))
+
+withr::with_libpaths(new=libInstallPath, devtools::uninstall())
+```

@@ -67,8 +67,8 @@ arma::mat rcpparma_outerproduct(const arma::colvec & x) {
 //' @export
 // [[Rcpp::export]]
 Rcpp::List rcpparma_bothproducts(const arma::colvec & x) {
-    double ip = arma::as_scalar(x.t() * x);
-    arma::mat op = x * x.t();
+    double ip = rcpparma_innerproduct(x);
+    arma::mat op = rcpparma_outerproduct(x);
     return Rcpp::List::create(Rcpp::Named("inner") = ip, Rcpp::Named("outer") =
             op);
 }

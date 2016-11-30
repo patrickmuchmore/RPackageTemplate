@@ -36,7 +36,7 @@ roxygen2::roxygenize()
 # devtools::document() a slower, but more thorough, way to create documentation.
 ```
 
-### Checking and building and the package from within R
+### Checking and building the package from within R
 ```{r eval=FALSE}
 buildDir = "build"
 if(!dir.exists(buildDir)) dir.create(buildDir)

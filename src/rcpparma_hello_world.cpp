@@ -11,10 +11,10 @@
 /* via the exports attribute we tell Rcpp to make this function
  available from R*/
 
+//' A "hello world" function
+//'
 //' A "hello world" function using the Armadillo library.
 //'
-//' @title
-//' A "hello world" function.
 //' @return
 //' A 3x3 matrix with 7 on the diagonal and zero elsewhere.
 //' @export
@@ -26,10 +26,10 @@ arma::mat rcpparma_hello_world() {
     return m1 + 3 * (m1 + m2);
 }
 
+//' Calculates the inner product
+//'
 //' Calculates the inner product of a vector using the Armadillo library.
 //'
-//' @title
-//' Calculates the inner product.
 //' @param x
 //' A numeric vector of length \code{n}.
 //' @return
@@ -41,10 +41,10 @@ double rcpparma_innerproduct(const arma::colvec & x) {
     return v;
 }
 
+//' Calculates the outer product
+//'
 //' Calculates the outer product of a vector using the Armadillo library.
 //'
-//' @title
-//' Calculates the outer product.
 //' @param x
 //' A numeric vector x of length \eqn{n}.
 //' @return
@@ -56,10 +56,10 @@ arma::mat rcpparma_outerproduct(const arma::colvec & x) {
     return m;
 }
 
+//' Calculates both products
+//'
 //' Calls both the inner and outer product functions, returning a list.
 //'
-//' @title
-//' Calculates both products.
 //' @param x
 //' A numeric vector of length \eqn{n}.
 //' @return

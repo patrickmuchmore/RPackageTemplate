@@ -4,6 +4,8 @@
 ###############################################################################
 
 
+#' An R package template
+#' 
 #' An R package template illustrating the use of various packages including:
 #' \code{\link[Rcpp]{Rcpp}}, \code{\link[RcppArmadillo]{RcppArmadillo}}, 
 #' \code{\link[devtools]{devtools}}, \code{\link[roxygen2]{roxygen2}}, 
@@ -11,8 +13,6 @@
 #'
 #' @name 
 #' RPackageTemplate
-#' @title 
-#' An R package template.
 #' @docType 
 #' package
 #' @importFrom 
@@ -21,11 +21,11 @@
 #' RPackageTemplate
 NULL
 
+#' A "hello world" function
+#' 
 #' A "hello world" function used to test the 
 #' \code{\link{rcpparma_hello_world}} implementation.
 #' 
-#' @title 
-#' A "hello world" function.
 #' @return
 #' A 3x3 matrix with 7 on the diagonal and zero elsewhere.
 #' @export

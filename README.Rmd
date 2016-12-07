@@ -46,6 +46,7 @@ computer, and they should be run from within the `RProjectTemplate` directory.
 Rcpp::compileAttributes()
 roxygen2::roxygenize()
 # devtools::document() a slower, but more thorough, way to create documentation.
+# See http://r-pkgs.had.co.nz/man.html for more about the documentation process.
 ```
 
 ### Checking and building the package from within R

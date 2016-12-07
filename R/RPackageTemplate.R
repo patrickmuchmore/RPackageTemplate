@@ -1,4 +1,4 @@
-# TODO: Add comment
+# An R package template illustrating the use of various packages
 # 
 # Author: muchmore
 ###############################################################################

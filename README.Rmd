@@ -6,7 +6,7 @@ below requires the `devtools` and `roxygen2` packages as well. To find
 out if any of these packages are missing from your R installation run:
 
 ```{r eval=FALSE}
-requiredPackages = c("Rcpp", "RcppArmadillo", "devtools", "roxygen2")
+requiredPackages = c("Rcpp", "RcppArmadillo", "devtools", "roxygen2", "testthat")
 missingPackages = setdiff(requiredPackages, rownames(installed.packages()))
 ```
 
@@ -16,18 +16,29 @@ To install any missing packages run:
 if(length(missingPackages)>0) install.packages(missingPackages)
 ```
 
- The package template includes both `R` and
-`C++` code, so a
+The package template includes both `R` and `C++` code, so a
 [suitable](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) `C++`
 compiler must be available to build the package from source. Windows users can
 try the [Rtools](https://cran.r-project.org/bin/windows/Rtools/) software 
-collection, while Mac users should install 
-[xcode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12). Details 
-regarding how to install and configure these tools can be found on
-the RStudio website under [Package Development Prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites).
+collection. Details regarding how to install and configure these tools can be
+found on the RStudio website under [Package Development
+Prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites).
 
-With the compiler and prerequisite packages installed, the package
-template can be prepared, built, and installed by running various R commands.
+Mac users should first install
+[xcode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12). Using the
+`RcppArmadillo` package also requires a Fortran compiler, which must be
+installed separately. Note the version currently hosted on the R project
+website is outdated and will not work. As described
+[here](http://thecoatlessprofessor.com/programming/rcpp-rcpparmadillo-and-os-x-mavericks-lgfortran-and-lquadmath-error/),
+a newer version can be installed opening a terminal and executing:
+
+> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2
+> sudo tar fvxz gfortran-4.8.2-darwin13.tar.bz2 -C /
+
+With the compiler and prerequisite packages installed, the package template can
+be prepared, built, and installed by running various R commands. The following
+examples assume you have cloned the project template repository to your
+computer, and they should be run within the `RProjectTemplate` directory.
 
 ### Preparing the package from within R
 ```{r eval=FALSE}

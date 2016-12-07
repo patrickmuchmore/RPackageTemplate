@@ -32,7 +32,7 @@ website is outdated and will not work. As described
 [here](http://thecoatlessprofessor.com/programming/rcpp-rcpparmadillo-and-os-x-mavericks-lgfortran-and-lquadmath-error/),
 a newer version can be installed opening a terminal and executing:
 
-> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2
+> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2  
 > sudo tar fvxz gfortran-4.8.2-darwin13.tar.bz2 -C /
 
 With the compiler and prerequisite packages installed, the package template can

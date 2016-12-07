@@ -27,10 +27,11 @@ Prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-D
 Mac users should first install
 [xcode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12). Using the
 `RcppArmadillo` package also requires a Fortran compiler, which must be
-installed separately. Note the version currently hosted on the R project
-website is outdated and will not work. As described
+installed separately from xcode. Note the version currently hosted on the R 
+project website is outdated and will not work. As described 
 [here](http://thecoatlessprofessor.com/programming/rcpp-rcpparmadillo-and-os-x-mavericks-lgfortran-and-lquadmath-error/),
-a newer version can be installed opening a terminal and executing:
+a newer version can be downloaded and installed by opening a terminal and 
+executing:
 
 > curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2  
 > sudo tar fvxz gfortran-4.8.2-darwin13.tar.bz2 -C /
